@@ -34,7 +34,7 @@ var (
 
 func init() {
 	cli, err := clientv3.New(clientv3.Config{
-		Endpoints:   []string{"0.0.0.0:2379"},
+		Endpoints:   []string{":2379"},
 		DialTimeout: 2 * time.Second,
 	})
 	if err != nil {
